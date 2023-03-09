@@ -1,0 +1,1 @@
+document.querySelector('#navegacion').innerHTML = NAV;
