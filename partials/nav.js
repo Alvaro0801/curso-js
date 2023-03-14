@@ -10,7 +10,7 @@ const NAV = `
 	        <li class="nav-item">
 	          <a class="nav-link active" aria-current="page" href="cursos.html">Cursos</a>
 	        </li>
-	        <li class="nav-item dropdown">
+	        <li class="nav-item dropdown menu-persona">
 	          <a class="nav-link dropdown-toggle" href="persona.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 	            Personas
 	          </a>
@@ -22,6 +22,9 @@ const NAV = `
 	            <li><a class="dropdown-item" href="javascript: listarPersonas('')">Todas las personas</a></li>
 	            <li><a class="dropdown-item" href="/registrar.html">Registrar persona</a></li>
 	          </ul>
+	        </li>
+			<li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="javascript: cerrarSesion()">Sign Out</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link disabled">Comité organizacional CIIS - XXIV</a>
