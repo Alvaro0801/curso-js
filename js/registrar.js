@@ -1,3 +1,7 @@
+if (!validarAcceso()) {
+    window.location.href = DIR_LOGIN;
+}
+
 let btnRegister=document.getElementById('registrar');
 
 const register=async()=>{
@@ -11,7 +15,7 @@ const register=async()=>{
     try {
         let msgSuccess=document.querySelector('#msg__success')
         let msgError=document.querySelector('#msg__error')
-        const response=await fetch('http://172.20.20.145:777/personas',{
+        const response=await fetch('http://172.20.20.145/personas',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -32,6 +36,7 @@ const register=async()=>{
         msgError.classList.add("d-none")
     } catch (error) {
         console.log('usuario no registrado')
+        msgError.classList.remove("d-none")
         console.log(error)
     }
 }

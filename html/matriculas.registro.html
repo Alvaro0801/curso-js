@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registrar Matrícula - CIIS XXIV</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" type="text/css" href="../css/personas.css">
+
+	<script src="https://kit.fontawesome.com/442d57c304.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../partials/nav.js"></script>
+	<script type="text/javascript" src="../js/utilitarios.js"></script>
+</head>
+<body>
+	<div id="navegacion"></div>
+	<div class="container-sm mx-auto p-4" style="max-width: 500px;" id="form-registro-matricula">
+		<h3 class="text-center">Registrar matrícula</h3>
+		<hr>
+        <div class="row">
+            <!-- Alerts -->
+            <div class="alerts">
+                <div class="alert alert-success d-none" role="alert" id="msg__success">
+                    Matricula Registrada con exito
+                  </div>
+                  <div class="alert alert-danger d-none" role="alert" id="msg__error">
+                    No se pudo registrar
+                </div>
+              </div>
+
+            <div class="mb-3">
+                <label class="form-label">Personas</label>
+                <select name="personas" class="form-select" id="select-personas">
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Cursos</label> 
+                <select name="cursos" class="form-select" id="select-cursos">
+                </select>
+            </div>
+        </div>
+		<hr>
+
+		<div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" id="registrarMatricula">Registrar</button>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="../js/loadPartials.js"></script>
+<script src="../js/matricula.registrar.js"></script>
+</html>
